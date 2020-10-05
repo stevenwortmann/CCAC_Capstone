@@ -7,7 +7,6 @@ I am to see how my work, screen time, exercise habits and bedtimes all affect my
  - Wake up time
  - Meditative practice before bedtime
  - Previous night’s hours slept
- - Alcohol consumed (# drinks)
 
 
 ##### I will passively collect these variables daily:
