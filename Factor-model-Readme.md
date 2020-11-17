@@ -1,5 +1,5 @@
 ## Factor Model: Visualize Yourself Project
-### Title:  Relationship of Sleep Patterns and Weekly Habits 
+### Title:  Heart Rate and Calorie Exertion and Geospatial Data
 
 I am to see how my work, screen time, exercise habits and bedtimes all affect my overall sleep quality
 
