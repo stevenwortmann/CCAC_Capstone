@@ -1,0 +1,39 @@
+version: "3.3"
+services:
+  notebook:
+    networks:
+      - "my_network"
+    env_file:
+      - "env.env"
+    build:
+      context: "./"
+      dockerfile: "Dockerfile"
+    ports:
+    - "8888:8888"
+    volumes:
+    - "./:/src"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    networks:
+      - "my_network"
+    depends_on:
+      - db
+    env_file:
+      - "env.env"
+    ports:
+      - "5050:5050"
+
+  db:
+    image: library/postgres:13
+    networks:
+      - "my_network"
+    env_file:
+      - "env.env"
+    volumes:
+      - "heartcalvolume:/var/lib/postgresql/data"
+networks:
+  my_network:
+    driver: "bridge"
+volumes:
+  heartcalvolume:
